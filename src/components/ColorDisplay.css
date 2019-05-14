@@ -1,0 +1,10 @@
+.ColorDisplay {
+  display: flex;
+  width: '5em';
+  height: 5em;
+    /* div {
+      display: flex;
+      width: 5em;
+      height: 5em;
+    } */
+}
