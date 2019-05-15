@@ -10,7 +10,7 @@ describe('ColorPicker portion', () => {
 
   it('state is updated to reflect the button clicked', () => {
     const color = jest.fn();
-    const wrapper = shallow(<ColorPicker color={color} />);
+    const wrapper = shallow(<ColorPicker colorHandler={color} />);
     wrapper.find('button').at(1).simulate('click');
     expect(color).toHaveBeenCalledWith('yellow');
   });

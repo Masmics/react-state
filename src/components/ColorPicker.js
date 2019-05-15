@@ -5,7 +5,9 @@ import styles from './ColorPicker.css';
 export default class ColorPicker extends PureComponent {
 
   static propTypes = {
-    colorHandler: PropTypes.func.isRequired
+    colorHandler() {
+      PropTypes.func.isRequired;
+    }
   }
 
   render() {
