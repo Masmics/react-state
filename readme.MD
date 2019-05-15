@@ -1,1 +1,1 @@
-React ColorPicker Exercize
+React State: ColorPicker Exercise
