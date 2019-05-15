@@ -4,13 +4,14 @@ import ColorPicker from './ColorPicker';
 
 describe('ColorPicker portion', () => {
   it('renders the color picker', () => {
-    const wrapper = shallow(<ColorPicker />);
+    const wrapper = shallow(<ColorPicker backgroundColor="red" />);
     expect(wrapper).toMatchSnapshot();
   });
 
   it('state is updated to reflect the button clicked', () => {
-    const wrapper = shallow(<ColorPicker />);
+    const color = jest.fn();
+    const wrapper = shallow(<ColorPicker color={color} />);
     wrapper.find('button').at(1).simulate('click');
-    expect(wrapper.state('color')).toBeAny(String);
+    expect(color).toHaveBeenCalledWith('yellow');
   });
 });

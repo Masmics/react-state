@@ -5,7 +5,7 @@ import ColorDisplay from './ColorDisplay';
 describe('Color', () => {
   it('renders the color display', () => {
     const wrapper = shallow(<ColorDisplay color="red" />);
-    expect(wrapper).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot;
   });
 });
 
