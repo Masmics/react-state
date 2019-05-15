@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './ColorDisplay.css';
 
-function ColorDisplay({ colorDisp }){
+function ColorDisplay({ color }){
   return (
-    <div className={styles.ColorDisplay} style={{ backgroundColor: colorDisp }}>Color Here!</div> 
+    <div className={styles.ColorDisplay} style={{ backgroundColor: color }}>Color!{color}</div> 
   );
 }
 
 ColorDisplay.propTypes = {
-  colorDisp: PropTypes.string.isRequired
+  color: PropTypes.string.isRequired
 };
 
 export default ColorDisplay;
